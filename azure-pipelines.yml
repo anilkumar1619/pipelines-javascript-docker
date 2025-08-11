@@ -20,7 +20,7 @@ stages:
       displayName: Login to ACR
       inputs:
         command: login
-        containerRegistry: 'azureaccess'  # <-- Add this line
+        containerRegistry: 'spservicdockerregi'  # <-- Add this line
 
     - task: Docker@2
       displayName: Build an image
