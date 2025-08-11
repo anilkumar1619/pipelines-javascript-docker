@@ -14,7 +14,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: "devopsagentpool"  # Your self-hosted agent pool
+      vmImage: ubuntu-latest  # Your self-hosted agent pool
     steps:
     - task: Docker@2
       displayName: Login to ACR
