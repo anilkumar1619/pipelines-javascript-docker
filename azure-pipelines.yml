@@ -18,7 +18,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: "Azure pipelines"
+      name: "Default"
     steps:
     - task: Docker@2
       displayName: Build an image
